@@ -1,0 +1,12 @@
+read stdin input
+submit
+    try to login
+    catch cookie and store it
+
+
+a completer ( readline )
+
+
+maybe useful packages: 
+    ora (dynamic show it is running)
+    js-cookie (to store cookie)
