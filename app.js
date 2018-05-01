@@ -4,11 +4,10 @@ const parseCommand = require('./lib/parseCommand.js')
 var args = process.argv.splice(2)
 if( args.length > 0 ) {
     parseCommand(args)
-    process.exit()
+    return
 }
 
 var input = readline.createInterface({input: process.stdin, output: process.stdout})
-
 input.on('line', (line) => {
     let args = line.split(' ')
 
@@ -18,4 +17,5 @@ input.on('line', (line) => {
 
     input.prompt()
 })
+
 input.prompt()
