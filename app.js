@@ -12,10 +12,10 @@ input.on('line', (line) => {
     let args = line.split(' ')
 
     if( args[0] === 'exit') return input.close()
+    input.pause()
 
     parseCommand(args)
 
-    input.prompt()
+    // input.prompt()
 })
-
 input.prompt()
