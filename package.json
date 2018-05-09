@@ -1,5 +1,5 @@
 {
-  "name": "codeforces-tool",
+  "name": "codeforces-cli-tool",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,12 +8,14 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": "https://github.com/edisonhello/Codeforces-tool",
   "dependencies": {
     "async": "^2.6.0",
     "cheerio": "^1.0.0-rc.2",
     "debug": "^3.1.0",
     "inquirer": "^5.2.0",
     "request": "^2.85.0",
-    "supports-color": "^5.4.0"
+    "supports-color": "^5.4.0",
+    "tough-cookie-filestore": "0.0.1"
   }
 }
