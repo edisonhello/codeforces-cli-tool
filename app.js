@@ -2,8 +2,10 @@ const readline = require('readline')
 const parseCommand = require('./lib/parseCommand.js')
 const request = require('request')
 const cookieFile = require('tough-cookie-filestore')
+const fs = require('fs')
 
-let cookiejar = request.jar(new cookieFile('./cookie.json'))
+let cookiePath = process.env.HOME + '/.codeforces-cli-tool/cookie.json'
+let cookiejar = request.jar(new cookieFile(cookiePath))
 
 var args = process.argv.splice(2)
 if( args.length > 0 ) {

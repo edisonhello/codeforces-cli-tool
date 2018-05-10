@@ -1,14 +1,23 @@
 {
   "name": "codeforces-cli-tool",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "Codeforces command line tool",
+  "author": "edisonhello",
+  "homepage": "https://github.com/edisonhello/Codeforces-tool",
+  "bugs": "https://github.com/edisonhello/Codeforces-tool/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edisonhello/Codeforces-tool"
+  },
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "bin": {
+      "codeforces": "./app.js"
+  },
   "license": "ISC",
-  "repository": "https://github.com/edisonhello/Codeforces-tool",
+  "readmeFilename": "README.md",
   "dependencies": {
     "async": "^2.6.0",
     "cheerio": "^1.0.0-rc.2",
