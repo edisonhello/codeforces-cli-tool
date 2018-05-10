@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const readline = require('readline')
 const parseCommand = require('./lib/parseCommand.js')
 const request = require('request')

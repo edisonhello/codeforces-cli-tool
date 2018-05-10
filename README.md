@@ -28,7 +28,7 @@ This command only available in non-interactive mode. Input your handle and passw
 
 
 ### submit
-    submit </path/to/file>
+    usage: submit </path/to/file>
 Now only support cpp files, and default to use C++11 complier.
 Notice that if this command are run in interactive mode, you have to login before. In case of non-interactive mode, you can login at same time when you submit.
 
