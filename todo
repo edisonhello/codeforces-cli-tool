@@ -1,13 +1,7 @@
-read stdin input
-submit
-    try to login
-    catch cookie and store it
-
-
 a completer ( readline )
 
 
-parse this: 
+parse this:
     <div style="background-color: #EAF4FF; padding: 1px 3px; font-size: 1.1rem; margin-top: 3px">
         <img src="http://st.codeforces.com/s/76445/images/icons/mail-16x16.png" style=""/>
             <span style="position: relative; bottom: 3px;">
@@ -17,6 +11,5 @@ parse this:
     </div>
 
 
-maybe useful packages: 
+maybe useful packages:
     ora (dynamic show it is running)
-    js-cookie (to store cookie)
