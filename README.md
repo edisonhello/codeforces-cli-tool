@@ -30,17 +30,22 @@ This command only available in non-interactive mode. Input your handle and passw
 ### submit
     usage: submit </path/to/file>
 <del>Now only support cpp files, and default to use C++11 complier.</del>
-Now you can run `init` to setup default complier based on file extensions. More information, see [Supports](#Supports) and [init](#init).
+Now you can run `set init` to setup default complier based on file extensions. More information, see [Supports](#Supports) and [set](#set).
 Notice that if this command are run in interactive mode, you have to login before. In case of non-interactive mode, you can login at same time when you submit.
 
-### init
-    usage: init [config/cookie]
-If no following arguments, both of config and cookie will going to initialize. Notice there should not be a file named `.codeforces-cli-tool` in your home directory. After initialize, `config.json` and `cookie.json` in `~/.codeforces-cli-tool` will be replaced. Follow the instruction after execute this command to setup cookie/config.
+### set
+    usage: set <init/cookie/compiler> [compiler options]
+#### init
+Run `init` at first time and follow the instruction to setup. Unless you are sure to refresh both cookie and compiler, do not run `init`.
+#### cookie
+The only way to logout from Codeforces currently.
+#### compiler
+If no following options, this will lead you to set all choosable compiler for each extensions, or only the specific extentions will be set. Options are `c`,`cpp`,and `py`.
 
 ## Installation
 ```bash
 $ npm install -g codeforces-cli-tool
-$ codeforces init
+$ codeforces set init
 ```
 
 ## Supports
