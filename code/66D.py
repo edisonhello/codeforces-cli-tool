@@ -1,4 +1,4 @@
-isprime = [1 for i in range(2000)]
+isprime = [1 for i in range(2001)]
 
 isprime[0] = 0
 isprime[1] = 0
