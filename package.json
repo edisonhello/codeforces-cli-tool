@@ -1,20 +1,27 @@
 {
   "name": "codeforces-cli-tool",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Codeforces command line tool",
   "author": "edisonhello",
-  "homepage": "https://github.com/edisonhello/Codeforces-tool",
-  "bugs": "https://github.com/edisonhello/Codeforces-tool/issues",
+  "homepage": "https://github.com/edisonhello/codeforces-cli-tool",
+  "bugs": "https://github.com/edisonhello/codeforces-cli-tool/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/edisonhello/Codeforces-tool"
+    "url": "https://github.com/edisonhello/codeforces-cli-tool"
   },
   "main": "app.js",
+  "keywords": [
+    "codeforces",
+    "programming",
+    "tool",
+    "cli",
+    "submit"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-      "codeforces": "./app.js"
+    "codeforces": "./app.js"
   },
   "license": "ISC",
   "readmeFilename": "README.md",
@@ -22,7 +29,10 @@
     "async": "^2.6.0",
     "cheerio": "^1.0.0-rc.2",
     "debug": "^3.1.0",
+    "enquirer": "^1.0.3",
     "inquirer": "^5.2.0",
+    "prompt-confirm": "^1.2.0",
+    "prompt-rawlist": "^2.0.1",
     "request": "^2.85.0",
     "supports-color": "^5.4.0",
     "tough-cookie-filestore": "0.0.1"
