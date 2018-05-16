@@ -29,7 +29,7 @@ This command only available in non-interactive mode. Input your handle and passw
 
 ### submit
     usage: submit </path/to/file>
-<del>Now only support cpp files, and default to use C++11 complier.</del>
+<del>Now only support cpp files, and default to use C\+\+11.</del>
 Now you can run `set init` to setup default complier based on file extensions. More information, see [Supports](#Supports) and [set](#set).
 Notice that if this command are run in interactive mode, you have to login before. In case of non-interactive mode, you can login at same time when you submit. File should be named as problem.language. For example, 977D.cpp is a C++ solution for problem 977D. And this is not case sensitive.
 
