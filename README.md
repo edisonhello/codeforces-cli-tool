@@ -74,3 +74,42 @@ If more extensions are needed, please issued it or talk to me.
      - `submit 977D.cpp wait` will give real-time feedback
  - contest mode
  - fetch sample testdata
+
+## Change log
+
+#### 1.3.0 2018-05-16
+now show submission id after submit
+prevent multiple command running at same time
+add change log
+
+#### 1.2.3 2018-05-16
+add more languages (now accourding to problem status to add new language). <del> I will add it after I saw it. </del>
+
+#### 1.2.2 2018-05-15
+add `config` command (in version 1.2.0)
+make language(compiler) chooable
+due to inquirer's rawlist display bug, try to use enquirer
+change `config` to `set`
+
+
+#### 1.1.2 2018-05-10
+add `login` command
+first time to write `README`
+use `~/.codeforces-cli-tool` directory to store files
+register `codeforces` command
+make this package runnable
+
+#### 1.0.1 2018-05-09 (no release)
+modulize some function in submit
+store cookie to prevent login everytime
+
+#### 1.0.0 2018-05-02
+finish basic submit feature
+add non-interactive mode, commands which use `inquirer` banned in interactive mode.
+
+#### 0.1.0 2018-05-02 (no release)
+successul get CSRF token
+readline will get inquirer input, maybe stdin confilct or something?
+
+#### 0.0.0 2018-05-01 (no release)
+project start.

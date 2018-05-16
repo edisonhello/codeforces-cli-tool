@@ -1,6 +1,6 @@
 a completer ( readline )
-choose complier by extension name
-costom complier
+replace inquirer by enquirer
+dynamic show status. maybe `submit file.cpp wait` or watch(?)
 
 
 parse this:
