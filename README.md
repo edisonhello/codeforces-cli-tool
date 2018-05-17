@@ -77,6 +77,10 @@ If more extensions are needed, please issued it or talk to me.
 
 ## Change log
 
+#### 1.4.2 2018-05-17
+fix bugs
+add colors to verdict
+
 #### 1.4.0 2018-05-17
 live submission status are added
 remove inquirer
