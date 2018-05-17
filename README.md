@@ -79,6 +79,7 @@ If more extensions are needed, please issued it or talk to me.
 
 #### 1.4.0 2018-05-17
 live submission status are added
+remove inquirer
 
 #### 1.3.0 2018-05-16
 now show submission id after submit
