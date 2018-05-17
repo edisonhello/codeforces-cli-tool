@@ -1,6 +1,6 @@
 a completer ( readline )
 replace inquirer by enquirer
-dynamic show status. maybe `submit file.cpp wait` or watch(?)
+add color to status
 
 
 parse this:

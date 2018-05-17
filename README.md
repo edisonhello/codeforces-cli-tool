@@ -28,9 +28,10 @@ This command only available in non-interactive mode. Input your handle and passw
 
 
 ### submit
-    usage: submit </path/to/file>
+    usage: submit </path/to/file> [submission options]
 <del>Now only support cpp files, and default to use C\+\+11.</del>
 Now you can run `set init` to setup default complier based on file extensions. More information, see [Supports](#Supports) and [set](#set).
+If options is `watch` or `wait`, a real-time update will active until verdict reveal. Update rate depend on network speed.
 Notice that if this command are run in interactive mode, you have to login before. In case of non-interactive mode, you can login at same time when you submit. File should be named as problem.language. For example, 977D.cpp is a C++ solution for problem 977D. And this is not case sensitive.
 
 ### set
@@ -70,12 +71,14 @@ If more extensions are needed, please issued it or talk to me.
 
  - do not need to name file as problem code anymore
      - command like `submit sol.cpp 977D` will work
- - watch status after submit
-     - `submit 977D.cpp wait` will give real-time feedback
+ - add color to status verdict
  - contest mode
  - fetch sample testdata
 
 ## Change log
+
+#### 1.4.0 2018-05-17
+live submission status are added
 
 #### 1.3.0 2018-05-16
 now show submission id after submit
