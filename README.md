@@ -71,9 +71,12 @@ If more extensions are needed, please issued it or talk to me.
 
  - do not need to name file as problem code anymore
      - command like `submit sol.cpp 977D` will work
- - add color to status verdict
  - contest mode
  - fetch sample testdata
+
+## Known bugs
+
+ - 302 Error when submit
 
 ## Change log
 

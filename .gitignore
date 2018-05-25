@@ -3,3 +3,4 @@ config.json
 *.swp
 test.js
 test.html
+error.html
