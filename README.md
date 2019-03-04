@@ -1,6 +1,6 @@
 # Codeforces cli tool
 
-This is a command line tool for Codeforces.
+This is a command line tool for Codeforces. This tool is temperary duplicated.
 
 ## Usage
 
@@ -76,7 +76,7 @@ If more extensions are needed, please issued it or talk to me.
 
 ## Known bugs
 
- - 302 Error when submit
+ - Due to Codeforce's new authorize method, this tool can not work now.
 
 ## Change log
 
