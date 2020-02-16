@@ -80,6 +80,9 @@ If more extensions are needed, please issued it or talk to me.
 
 ## Change log
 
+#### 1.4.4 2020-02-17
+fit into new codeforces html format
+
 #### 1.4.2 2018-05-17
 fix bugs
 add colors to verdict

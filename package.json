@@ -1,6 +1,6 @@
 {
   "name": "codeforces-cli-tool",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "Codeforces command line tool",
   "author": "edisonhello",
   "homepage": "https://github.com/edisonhello/codeforces-cli-tool",
@@ -15,6 +15,7 @@
     "programming",
     "tool",
     "cli",
+	"client",
     "submit"
   ],
   "scripts": {
