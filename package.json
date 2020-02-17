@@ -1,6 +1,6 @@
 {
   "name": "codeforces-cli-tool",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "Codeforces command line tool",
   "author": "edisonhello",
   "homepage": "https://github.com/edisonhello/codeforces-cli-tool",
@@ -15,7 +15,7 @@
     "programming",
     "tool",
     "cli",
-	"client",
+    "client",
     "submit"
   ],
   "scripts": {
@@ -37,6 +37,7 @@
     "prompt-rawlist": "^2.0.1",
     "request": "^2.85.0",
     "supports-color": "^5.4.0",
-    "tough-cookie-filestore": "0.0.1"
+    "tough-cookie-filestore": "0.0.1",
+    "yargs": "^15.1.0"
   }
 }

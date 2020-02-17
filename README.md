@@ -23,19 +23,22 @@ use `exit` to exit in interactive mode.
 Current supported commands are:
 
 ### login
-    usage: login
+    Usage: login
 This command only available in non-interactive mode. Input your handle and password when it prompts.
 
-
 ### submit
-    usage: submit </path/to/file> [submission options]
+    Usage: submit </path/to/file> [--watch]
 <del>Now only support cpp files, and default to use C\+\+11.</del>
 Now you can run `set init` to setup default complier based on file extensions. More information, see [Supports](#Supports) and [set](#set).
-If options is `watch` or `wait`, a real-time update will active until verdict reveal. Update rate depend on network speed.
-Notice that if this command are run in interactive mode, you have to login before. In case of non-interactive mode, you can login at same time when you submit. File should be named as problem.language. For example, 977D.cpp is a C++ solution for problem 977D. And this is not case sensitive.
+
+If `watch` option is provided, a real-time update will active until verdict reveal. Update rate depend on network speed. If this field is empty, the submission id will be printed.
+
+Notice that if this command are run in interactive mode, you have to login in non-interactive mode first. In case of non-interactive mode, you can login at same time when you submit. 
+
+File should be named as `problem.language`. For example, 977D.cpp is a C++ solution for problem 977D, and this is not case sensitive.
 
 ### set
-    usage: set <init/cookie/compiler> [compiler options]
+    Usage: set <init/cookie/compiler> [compiler options]
 
 Only `set cookie` are available in interactive mode. Others are only available in non-interactive mode.
 Directory `~/.codeforces-cli-tool` must exist when execute this command except `set init`.
@@ -79,6 +82,9 @@ If more extensions are needed, please issued it or talk to me.
  - Due to Codeforce's new authorize method, this tool can not work now.
 
 ## Change log
+
+#### 1.4.6 2020-02-17
+Keep fixing fetch submission id issue
 
 #### 1.4.4 2020-02-17
 fit into new codeforces html format
