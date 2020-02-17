@@ -83,6 +83,9 @@ If more extensions are needed, please issued it or talk to me.
 
 ## Change log
 
+#### 1.5.0 2020-02-18
+Allow submit to contests/gyms. Submission in contests should work with this feature. Mashups is not tested.
+
 #### 1.4.6 2020-02-17
 Keep fixing fetch submission id issue
 
