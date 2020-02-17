@@ -27,15 +27,21 @@ Current supported commands are:
 This command only available in non-interactive mode. Input your handle and password when it prompts.
 
 ### submit
-    Usage: submit </path/to/file> [--watch]
+    Usage: submit </path/to/file> [--watch] [--contest <contest_id>/--gym <gym_id>/--mashup <mashup_id>]
 <del>Now only support cpp files, and default to use C\+\+11.</del>
 Now you can run `set init` to setup default complier based on file extensions. More information, see [Supports](#Supports) and [set](#set).
 
 If `watch` option is provided, a real-time update will active until verdict reveal. Update rate depend on network speed. If this field is empty, the submission id will be printed.
 
+One can add `--contest` options to specify which contest will be submitted to. The priority of this option is higher than file name described below. Same as `--gym` and `--mashup`.
+
 Notice that if this command are run in interactive mode, you have to login in non-interactive mode first. In case of non-interactive mode, you can login at same time when you submit. 
 
-File should be named as `problem.language`. For example, 977D.cpp is a C++ solution for problem 977D, and this is not case sensitive.
+#### File Name
+
+File should be named as `problem.ext`. For example, `977D.cpp` is a C++ solution for problem `977D`, and this is not case sensitive.
+
+If `--contest`(or another two options) are provided, file can be named as `*index.ext`. That is, `meowF.cpp` will be send to problem F of the specified contest.
 
 ### set
     Usage: set <init/cookie/compiler> [compiler options]
@@ -83,56 +89,75 @@ If more extensions are needed, please issued it or talk to me.
 
 ## Change log
 
+#### 1.5.1 2020-02-18
+Specify contests/gyms/mashups in options. 
+
+Allowing file name without contest id if this option is set.
+
 #### 1.5.0 2020-02-18
 Allow submit to contests/gyms. Submission in contests should work with this feature. Mashups is not tested.
 
 #### 1.4.6 2020-02-17
-Keep fixing fetch submission id issue
+Keep fixing fetch submission id issue.
 
 #### 1.4.4 2020-02-17
-fit into new codeforces html format
+Fit into new codeforces html format.
 
 #### 1.4.2 2018-05-17
-fix bugs
-add colors to verdict
+Fix bugs.
+
+Add colors to verdict.
 
 #### 1.4.0 2018-05-17
-live submission status are added
-remove inquirer
+Live submission status are added.
+
+Remove inquirer.
 
 #### 1.3.0 2018-05-16
-now show submission id after submit
-prevent multiple command running at same time
-add change log
+Show submission id after submit.
+
+Prevent multiple command running at same time.
+
+Add change log.
 
 #### 1.2.3 2018-05-16
-add more languages (now accourding to problem status to add new language). <del> I will add it after I saw it. </del>
+Add more languages (now accourding to problem status to add new language). <del> I will add it after I saw it. </del>
 
 #### 1.2.2 2018-05-15
-add `config` command (in version 1.2.0)
-make language(compiler) chooable
-due to inquirer's rawlist display bug, try to use enquirer
-change `config` to `set`
+Add `config` command (in version 1.2.0).
+
+Make language(compiler) chooable.
+
+Due to inquirer's rawlist display bug, try to use enquirer.
+
+Change `config` to `set`.
 
 
 #### 1.1.2 2018-05-10
-add `login` command
-first time to write `README`
-use `~/.codeforces-cli-tool` directory to store files
-register `codeforces` command
-make this package runnable
+Add `login` command.
+
+First time to write `README`.
+
+Use `~/.codeforces-cli-tool` directory to store files.
+
+Register `codeforces` command.
+
+Make this package runnable.
 
 #### 1.0.1 2018-05-09 (no release)
-modulize some function in submit
-store cookie to prevent login everytime
+Modulize some function in submit.
+
+Store cookie to prevent login everytime.
 
 #### 1.0.0 2018-05-02
-finish basic submit feature
-add non-interactive mode, commands which use `inquirer` banned in interactive mode.
+Finish basic submit feature.
+
+Add non-interactive mode, commands which use `inquirer` banned in interactive mode.
 
 #### 0.1.0 2018-05-02 (no release)
-successul get CSRF token
-readline will get inquirer input, maybe stdin confilct or something?
+Successul get CSRF token.
+
+Readline will get inquirer input, maybe stdin confilct or something?
 
 #### 0.0.0 2018-05-01 (no release)
-project start.
+Project start.
