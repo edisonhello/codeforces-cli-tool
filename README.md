@@ -55,6 +55,14 @@ The only way to logout from Codeforces currently.
 #### compiler
 If no following options, this will lead you to set all choosable compiler for each extensions, or only the specific extentions will be set. Options are `c`,`cpp`,and `py`.
 
+### Arguments
+
+There are some common arguments can be used:
+
+* `--config-path <path>`: specify the config directory. Default is `$HOME/.codeforces-cli-tool`.
+* `--cookie-file <file>`: specify the cookie file name. Related to `config-path`, default is `cookie.json`.
+* `--compiler-file <file>`: specify the compiler file name. Related to `config-path`, default is `compiler.json`.
+
 ## Installation
 ```bash
 $ npm install -g codeforces-cli-tool
@@ -88,6 +96,9 @@ If more extensions are needed, please issued it or talk to me.
  - Due to Codeforce's new authorize method, this tool can not work now.
 
 ## Change log
+
+#### 1.6.0 2020-02-18
+Allow to set config-path, cookie-file, compiler-file in arguments.
 
 #### 1.5.1 2020-02-18
 Specify contests/gyms/mashups in options. 

@@ -12,6 +12,8 @@ parse this:
             </span>
     </div>
 
+make `watch` become default
+specify problem index (, D)
 
 maybe useful packages:
     ora (dynamic show it is running)
