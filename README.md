@@ -1,6 +1,6 @@
 # Codeforces cli tool
 
-This is a command line tool for Codeforces. This tool is temperary duplicated.
+This is a command line tool for Codeforces. 
 
 ## Usage
 
