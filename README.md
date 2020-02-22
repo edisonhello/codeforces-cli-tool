@@ -96,8 +96,10 @@ If more extensions are needed, please issue it or send a PR.
 
 ## Change log
 
-#### 1.6.1 2020-02-22
+#### 1.6.2 2020-02-22
 Update to newer compiler options. (Not fully updated)
+
+Fix minor problems.
 
 #### 1.6.0 2020-02-18
 Allow to set config-path, cookie-file, compiler-file in arguments.
