@@ -73,29 +73,31 @@ You can also manually add a empty file `~/.codeforces-cli-tool/cookie.json` to u
 ## Supports
 
 ### Supporting extensions
- - `.c` default using `GNU GCC 5.1.0`
- - `.cpp` default using `GNU G++11 5.1.0`
- - `.py` default using `Python 3.6`
+ - `.c` default using `GNU GCC C11 5.1.0`
+ - `.cpp` and `.cc` default using `GNU G++14 6.4.0` (changable)
+ - `.py` default using `Python 3.7.2` (changable)
  - `.go` using `Go 1.8`
  - `.pl` using `Perl 5.20.1`
  - `.java` using `Java 1.8.0_131`
  - `.cs` using `C# Mono 5`
  - `.hs` using `Haskell GHC 7.8.3`
 
-If more extensions are needed, please issued it or talk to me.
+If more extensions are needed, please issue it or send a PR.
 
 ## Coming soon
 
  - do not need to name file as problem code anymore
      - command like `submit sol.cpp 977D` will work
- - contest mode
  - fetch sample testdata
 
 ## Known bugs
 
- - Due to Codeforce's new authorize method, this tool can not work now.
+ - Sometime the submit can fail due to unknown 302 error. Just retry it.
 
 ## Change log
+
+#### 1.6.1 2020-02-22
+Update to newer compiler options. (Not fully updated)
 
 #### 1.6.0 2020-02-18
 Allow to set config-path, cookie-file, compiler-file in arguments.
