@@ -73,7 +73,7 @@ You can also manually add a empty file `~/.codeforces-cli-tool/cookie.json` to u
 ## Supports
 
 ### Supporting extensions
- - `.c` default using `GNU GCC C11 5.1.0`
+ - `.c` using `GNU GCC C11 5.1.0`
  - `.cpp` and `.cc` default using `GNU G++14 6.4.0` (changable)
  - `.py` default using `Python 3.7.2` (changable)
  - `.go` using `Go 1.8`
@@ -96,7 +96,7 @@ If more extensions are needed, please issue it or send a PR.
 
 ## Change log
 
-#### 1.6.2 2020-02-22
+#### 1.6.3 2020-02-22
 Update to newer compiler options. (Not fully updated)
 
 Fix minor problems.
